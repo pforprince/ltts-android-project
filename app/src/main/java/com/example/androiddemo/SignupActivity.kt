@@ -21,12 +21,9 @@ class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
-        var userNameLay = findViewById<TextInputLayout>(R.id.userNameLayout)
-        var userNameEt = findViewById<TextInputEditText>(R.id.userNameEt)
-        var nameLay = findViewById<TextInputLayout>(R.id.nameLayout)
-        val nameEt = findViewById<TextInputEditText>(R.id.nameEt)
-        var passLay = findViewById<TextInputLayout>(R.id.passwordLayout)
-        val passEt = findViewById<TextInputEditText>(R.id.passwordEt)
+        var userNameEt = findViewById<EditText>(R.id.userNameEt)
+        val nameEt = findViewById<EditText>(R.id.nameEt)
+        val passEt = findViewById<EditText>(R.id.passwordEt)
         val spinner = findViewById<Spinner>(R.id.spinner);
         var radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
         var appCheck = findViewById<CheckBox>(R.id.appCheck)

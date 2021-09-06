@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.text.TextUtils.isEmpty
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 
@@ -17,8 +18,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         var loginButton = findViewById<Button>(R.id.logInButton)
         var signUpButton = findViewById<Button>(R.id.signUpButton)
-        var usernameEt = findViewById<TextInputEditText>(R.id.userNameEt)
-        var passwordEt = findViewById<TextInputEditText>(R.id.passwordEt)
+        var usernameEt = findViewById<EditText>(R.id.userNameEt)
+        var passwordEt = findViewById<EditText>(R.id.passwordEt)
         val sharedPreference = getSharedPreferences("USER_DATA", Context.MODE_PRIVATE)
         var username = sharedPreference.getString("username", "")
         var password = sharedPreference.getString("password", "")
